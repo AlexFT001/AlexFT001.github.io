@@ -7,7 +7,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
     .then(response => response.json())
     .then(repositories => {
         repositories.forEach(repo => {
-            if((repo.name).toLowerCase() != portgolioLink.toLowerCase()) {
+            if(repo.has_pages && (repo.name).toLowerCase() != portgolioLink.toLowerCase()) {
                 const repoDiv = document.createElement('div')
                 repoDiv.className = 'repo';
             
