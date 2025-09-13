@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #cdf0f7;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  background-color: black;
+  background-image: url('https://github.com/alexft001.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.talktext {
+  padding: 1em;
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.talktext p {
+  /* remove webkit p margins */
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+}
+
+.talk-bubble {
+  margin: 40px;
+  display: inline-block;
+  position: relative;
+  width: auto;
+  max-width: 400px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
+
+.triangle:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: -20px;
+	right: auto;
+  top: 38px;
+	bottom: auto;
+	border: 12px solid;
+	border-color: rgb(255, 255, 255) rgb(255, 255, 254) transparent transparent;
+}
+
+.box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px 50px 30px 5px;
+  ;
+  flex-grow: 1;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+
+}
+
+.repositories h3 {
+  color: red;
+  margin-top: 40px;
+}
+
+.repo-list {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repo {
+  background-color: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px 15px;
+}
